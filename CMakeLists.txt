@@ -1,12 +1,12 @@
 
 cmake_minimum_required(VERSION 3.10)
 
-# set the project name
-project(TestGame)
+project(AwsomeGame)
 
-include_directories("${PROJECT_SOURCE_DIR}/src")
-add_subdirectory(src)
+include_directories("${PROJECT_SOURCE_DIR}/FriendlyHare")
+add_subdirectory(FriendlyHare)
 
-# add the executable
-add_executable(TestGame test.cpp)
-target_link_libraries(TestGame FriendlyHareEngine)
+include_directories("${PROJECT_SOURCE_DIR}/AwsomeGame")
+add_executable(AwsomeGame AwsomeGame/main.cpp)
+
+target_link_libraries(AwsomeGame FriendlyHareEngine)
