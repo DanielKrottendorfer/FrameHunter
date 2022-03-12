@@ -9,5 +9,6 @@ mingw32-make
 
 cd ..
 
-copy .\build\FriendlyHare\libFriendlyHareEngine.dll .
+copy .\build\FriendlyHare\libFriendlyHare.dll .
+copy .\build\FriendlyHare\src\FHLog\libFHLog.dll .
 copy .\build\AwsomeGame.exe .
