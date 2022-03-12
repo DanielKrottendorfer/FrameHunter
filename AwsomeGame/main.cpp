@@ -1,11 +1,17 @@
-#include "FriendlyHareEngine.hpp"
+#include "FriendlyHare.hpp"
 #include <iostream>
 
 using namespace std;
 
-int main() {
-    cout << "Hello World" << endl;
-    int a = give42();
-    cout << "Hello" << a << endl;
+class MyGame : public FriendlyHare::Application
+{
+public:
+    ~MyGame() {}
+    MyGame() {}
+};
+
+int main()
+{
+    FriendlyHare::run_application<MyGame>();
     return 0;
-}
+};
