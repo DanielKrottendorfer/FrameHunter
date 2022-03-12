@@ -1,0 +1,3 @@
+[submodule "FriendlyHare/external/spdlog"]
+	path = FriendlyHare/external/spdlog
+	url = https://github.com/gabime/spdlog.git
