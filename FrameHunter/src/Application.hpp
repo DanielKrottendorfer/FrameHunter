@@ -2,10 +2,10 @@
 
 #include <type_traits>
 
-#include "FriendlyHare.hpp"
+#include "FrameHunter.hpp"
 #include "FHLog/FHLog.hpp"
 
-namespace FriendlyHare
+namespace FrameHunter
 {
     class Application
     {

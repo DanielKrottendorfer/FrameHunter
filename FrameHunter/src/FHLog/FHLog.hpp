@@ -1,6 +1,6 @@
 #pragma once
 
-namespace FriendlyHare
+namespace FrameHunter
 {
 
 #ifdef RELEASE

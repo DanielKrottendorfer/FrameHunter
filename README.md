@@ -1,5 +1,5 @@
 
-# FriendlyHare Game Engine
+# FrameHunter Game Engine
 C++ Game Engine FH-Technikum Wien 2022
 
 ## Build

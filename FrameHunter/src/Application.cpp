@@ -2,10 +2,10 @@
 #include <iostream>
 using namespace std;
 
-#include "FriendlyHare.hpp"
+#include "FrameHunter.hpp"
 #include "FHLog/FHLog.hpp"
 
-namespace FriendlyHare
+namespace FrameHunter
 {
 
     Application::Application(){};

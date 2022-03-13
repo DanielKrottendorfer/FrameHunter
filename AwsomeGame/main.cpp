@@ -1,10 +1,10 @@
-#include "FriendlyHare.hpp"
+#include "FrameHunter.hpp"
 #include <iostream>
 
 
 using namespace std;
 
-class MyGame : public FriendlyHare::Application
+class MyGame : public FrameHunter::Application
 {
 public:
     ~MyGame() {}
@@ -13,6 +13,6 @@ public:
 
 int main()
 {
-    FriendlyHare::run_application<MyGame>();
+    FrameHunter::run_application<MyGame>();
     return 0;
 };

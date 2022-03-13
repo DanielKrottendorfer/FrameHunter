@@ -8,7 +8,7 @@ using namespace std;
 #include "FHLog.hpp"
 
 #ifndef RELEASE
-namespace FriendlyHare
+namespace FrameHunter
 {
     static shared_ptr<spdlog::logger> s_CoreLogger;
     static shared_ptr<spdlog::logger> s_ClientLogger;
