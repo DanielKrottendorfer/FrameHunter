@@ -1,6 +1,7 @@
 #include "FriendlyHare.hpp"
 #include <iostream>
 
+
 using namespace std;
 
 class MyGame : public FriendlyHare::Application

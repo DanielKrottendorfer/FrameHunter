@@ -2,6 +2,9 @@
 
 #include <type_traits>
 
+#include "FriendlyHare.hpp"
+#include "FHLog/FHLog.hpp"
+
 namespace FriendlyHare
 {
     class Application

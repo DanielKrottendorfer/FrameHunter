@@ -12,9 +12,9 @@ namespace FriendlyHare
     Application::~Application(){};
     void Application::Run()
     {
-        FHLog::init();
-        FH_CORE_INFO("CORE LOGGER INITITIALIZED");
+        FH_LOG_INIT();
+        FH_CORE_INFO("CORsE LOGGER INITITIALIZED");
         FH_CLIENT_INFO("CLIENT LOGGER INITITIALIZED");
-
+        FH_LOG_CLEANUP();
     };
 }

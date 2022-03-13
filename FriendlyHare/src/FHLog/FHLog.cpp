@@ -7,9 +7,9 @@ using namespace std;
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "FHLog.hpp"
 
+#ifndef RELEASE
 namespace FriendlyHare
 {
-
     static shared_ptr<spdlog::logger> s_CoreLogger;
     static shared_ptr<spdlog::logger> s_ClientLogger;
 
@@ -57,4 +57,9 @@ namespace FriendlyHare
         s_ClientLogger = spdlog::stdout_color_mt("APPLICATION");
         s_ClientLogger->set_level(spdlog::level::trace);
     }
+
+    void FHLog::cleanup()
+    {
+    }
 }
+#endif
