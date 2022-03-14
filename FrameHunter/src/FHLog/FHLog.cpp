@@ -1,3 +1,4 @@
+#ifndef RELEASE
 
 #include <memory>
 #include <iostream>
@@ -7,7 +8,6 @@ using namespace std;
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "FHLog.hpp"
 
-#ifndef RELEASE
 namespace FrameHunter
 {
     static shared_ptr<spdlog::logger> s_CoreLogger;
@@ -56,10 +56,6 @@ namespace FrameHunter
 
         s_ClientLogger = spdlog::stdout_color_mt("APPLICATION");
         s_ClientLogger->set_level(spdlog::level::trace);
-    }
-
-    void FHLog::cleanup()
-    {
     }
 }
 #endif

@@ -2,8 +2,8 @@
 
 #include <type_traits>
 
-#include "FrameHunter.hpp"
 #include "FHLog/FHLog.hpp"
+#include "Event.h"
 
 namespace FrameHunter
 {
