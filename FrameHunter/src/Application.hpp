@@ -7,7 +7,7 @@
 
 namespace FrameHunter
 {
-    class Application
+    class __declspec(dllexport) Application
     {
     public:
         Application();

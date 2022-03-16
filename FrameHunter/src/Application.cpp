@@ -12,7 +12,7 @@ namespace FrameHunter
     void Application::Run()
     {
         FH_LOG_INIT();
-        FH_CORE_INFO("CORE LOGGER INITITIALIZED");
+        FH_CORE_INFO("COREsssssS<ssssSW LOGGER INITITIALIZED");
         FH_CLIENT_INFO("CLIENT LOGGER INITITIALIZED");
     };
 }

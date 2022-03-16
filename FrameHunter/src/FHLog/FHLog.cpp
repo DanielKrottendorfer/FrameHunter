@@ -4,9 +4,8 @@
 #include <iostream>
 using namespace std;
 
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
 #include "FHLog.hpp"
+#include "pch.h"
 
 namespace FrameHunter
 {

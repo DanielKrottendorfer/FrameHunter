@@ -4,11 +4,11 @@
 mkdir build
 cd build
 
-cmake .. -G "MinGW Makefiles"
-mingw32-make
+cmake .. -G "Visual Studio 17 2022" -A x64
+MSBuild AwsomeGame.sln
 
 cd ..
 
-copy .\build\FrameHunter\libFrameHunter.dll .
-copy .\build\FrameHunter\src\FHLog\libFHLog.dll .
-copy .\build\AwsomeGame.exe .
+copy .\build\FrameHunter\Debug\FrameHunter.dll .
+copy .\build\FrameHunter\src\FHLog\Debug\FHLog.dll .
+copy .\build\Debug\AwsomeGame.exe .
