@@ -1,6 +1,4 @@
 #include "FrameHunter.hpp"
-#include <iostream>
-
 
 using namespace std;
 

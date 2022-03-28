@@ -16,7 +16,7 @@ namespace FrameHunter
 #define FH_CLIENT_ERROR(message)
 
 #else
-    class FHLog
+    class __declspec(dllexport) FHLog
     {
     public:
         static void init();

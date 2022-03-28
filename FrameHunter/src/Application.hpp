@@ -1,13 +1,13 @@
 #pragma once
 
-#include <type_traits>
+using namespace std;
 
-#include "FHLog/FHLog.hpp"
+#include "FHLog.hpp"
 #include "Event.h"
 
 namespace FrameHunter
 {
-    class Application
+    class __declspec(dllexport) Application
     {
     public:
         Application();
@@ -19,7 +19,6 @@ namespace FrameHunter
     template <class App>
     void run_application()
     {
-        static_assert(std::is_base_of<Application, App>::value, "App must derive from Application");
         auto app = new App();
         app->Run();
         delete app;
