@@ -1,3 +1,0 @@
-[submodule "FrameHunter/external/spdlog"]
-	path = FrameHunter/external/spdlog
-	url = https://github.com/gabime/spdlog.git
