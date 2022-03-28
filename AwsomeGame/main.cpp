@@ -12,5 +12,6 @@ public:
 int main()
 {
     FrameHunter::run_application<MyGame>();
+    
     return 0;
 };
