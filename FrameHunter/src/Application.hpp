@@ -5,8 +5,6 @@ using namespace std;
 #include "FHLog.hpp"
 #include "Event.h"
 
-#include "pch.hpp"
-
 namespace FrameHunter
 {
     class __declspec(dllexport) Application
@@ -21,7 +19,7 @@ namespace FrameHunter
     template <class App>
     void run_application()
     {
-         
+
         static_assert(std::is_base_of<Application, App>::value, "App must derive from Application");
 
         auto app = new App();
