@@ -1,7 +1,7 @@
 #pragma once
 
 #include "FHLog.hpp"
-#include "Event.h"
+#include "Event.hpp"
 #include "Window.hpp"
 #include "src/pch.hpp"
 

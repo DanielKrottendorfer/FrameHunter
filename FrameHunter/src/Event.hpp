@@ -8,8 +8,6 @@ enum class EventType
     WindowFocus,
     WindowLostFocus,
     WindowMoved,
-    AppUpdate,
-    AppRender,
     KeyPressed,
     KeyReleased,
     MouseButtonPressed,
@@ -18,31 +16,16 @@ enum class EventType
     MouseScrolled
 };
 
-#define BIT(x) (1 << x)
-enum EventCategory
-{
-    None = 0,
-    EventCategoryApplication    = BIT(0),
-    EventCategoryInput          = BIT(1),
-    EventCategoryKeyboard       = BIT(2),
-    EventCategoryMouse          = BIT(3),
-    EventCategoryMouseButton    = BIT(4)
-};
-
 class Event
 {
     public:
-        
-
-
-    private:
         EventType event_type;
         union
         {
             unsigned int dimension [2];
             unsigned int position [2];
-            unsigned int key_code;
+            char key_char;
             unsigned int mouse_botton [3];
-            int wheel_dir;
+            float wheel_dir;
         };
 };

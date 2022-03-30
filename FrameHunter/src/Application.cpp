@@ -23,26 +23,24 @@ namespace FrameHunter
     {
         while (running)
         {
-            window->OnUpdate();
-            SDL_Event Event;
-            while (SDL_PollEvent(&Event))
-            {
-                if (Event.type == SDL_KEYDOWN)
+            Event event;
+            while(window->PollEvent(&event)){
+                if (event.event_type == EventType::KeyPressed)
                 {
-                    switch (Event.key.keysym.sym)
+                    switch (event.key_char)
                     {
-                    case SDLK_ESCAPE:
+                    case '\x1B':
                         running = 0;
                         break;
                     default:
                         break;
                     }
                 }
-                else if (Event.type == SDL_QUIT)
+                else if (event.event_type == EventType::WindowClose)
                 {
                     running = 0;
-                }
-            }
+                }}
+
             window->draw();
         }
 

@@ -9,6 +9,7 @@ add_subdirectory(FrameHunter)
 
 include_directories("${PROJECT_SOURCE_DIR}/AwsomeGame")
 include_directories("${PROJECT_SOURCE_DIR}/FrameHunter/external/spdlog/include")
+include_directories("${PROJECT_SOURCE_DIR}/FrameHunter/external/SDL2/include")
 add_executable(AwsomeGame AwsomeGame/main.cpp)
 
 target_link_libraries(AwsomeGame FrameHunter)
