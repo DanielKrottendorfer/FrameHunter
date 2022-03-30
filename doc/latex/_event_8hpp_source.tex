@@ -1,0 +1,37 @@
+\hypertarget{_event_8hpp_source}{}\doxysection{Event.\+hpp}
+\label{_event_8hpp_source}\index{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/Event.hpp@{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/Event.hpp}}
+\mbox{\hyperlink{_event_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{enum class} \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6fa}{EventType}}}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa6adf97f83acf6453d4a6a4b1070f3754}{None}} = 0,}
+\DoxyCodeLine{6     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faac984201d37197ab297a14d19efee4b07}{WindowClose}},}
+\DoxyCodeLine{7     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa9f8f27bff2915738c4fe1b970e12f89c}{WindowResize}},}
+\DoxyCodeLine{8     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa1c68d5453b28d52622bf5486a5fd95ca}{WindowFocus}},}
+\DoxyCodeLine{9     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa1c2119b9d61e623975f13f1029f1d97c}{WindowLostFocus}},}
+\DoxyCodeLine{10     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faab94473d9dfc85f8fdbf5cb3b1d992bda}{WindowMoved}},}
+\DoxyCodeLine{11     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faac17e6984c1e5a887a49831beadee6bca}{KeyPressed}},}
+\DoxyCodeLine{12     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa4a77f07c8ad223b71ab4ce78a63841ab}{KeyReleased}},}
+\DoxyCodeLine{13     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa7349f643d689997b7c54bf93e4095f5c}{MouseButtonPressed}},}
+\DoxyCodeLine{14     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa7584c169de594c27f00084b93186fd7c}{MouseButtonReleased}},}
+\DoxyCodeLine{15     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faac2770ad109c8063ce69a3608a9a16c08}{MouseMoved}},}
+\DoxyCodeLine{16     \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6faa50edb169910041bb3c06f6e8322d74c1}{MouseScrolled}}}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_event}{Event}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \mbox{\hyperlink{_event_8hpp_a2628ea8d12e8b2563c32f05dc7fff6fa}{EventType}} \mbox{\hyperlink{class_event_a1d0aabe9c8c54d12c559224e3ce53c61}{event\_type}};}
+\DoxyCodeLine{23         \textcolor{keyword}{union}}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_event_a98443b4f439bfe3b53ee81cac7c6310b}{dimension}} [2];}
+\DoxyCodeLine{26             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_event_a505a532651440df9970170dabe17c4dc}{position}} [2];}
+\DoxyCodeLine{27             \textcolor{keywordtype}{char} \mbox{\hyperlink{class_event_a1be8d34d72e38e5784b8c8c2a85947e7}{key\_char}};}
+\DoxyCodeLine{28             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_event_ad435903d54431b000962cca82e2b7a8b}{mouse\_botton}} [3];}
+\DoxyCodeLine{29             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_event_a051690b49099d4743221b76185eff323}{wheel\_dir}};}
+\DoxyCodeLine{30         \};}
+\DoxyCodeLine{31 \};}
+
+\end{DoxyCode}

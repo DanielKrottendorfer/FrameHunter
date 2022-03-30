@@ -1,0 +1,39 @@
+\hypertarget{_application_8hpp_source}{}\doxysection{Application.\+hpp}
+\label{_application_8hpp_source}\index{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/Application.hpp@{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/Application.hpp}}
+\mbox{\hyperlink{_application_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_f_h_log_8hpp}{FHLog.hpp}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_event_8hpp}{Event.hpp}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_8hpp}{Window.hpp}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pch_8hpp}{src/pch.hpp}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_frame_hunter}{FrameHunter}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     \textcolor{keyword}{class }\textcolor{keyword}{\_\_declspec(dllexport)} Application}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         Application();}
+\DoxyCodeLine{16         \textcolor{keyword}{virtual} \string~Application();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{keywordtype}{void} Run();}
+\DoxyCodeLine{19     \textcolor{keyword}{private}:}
+\DoxyCodeLine{20         std::unique\_ptr<Window> window;}
+\DoxyCodeLine{21         \textcolor{keywordtype}{bool} running = \textcolor{keyword}{true};}
+\DoxyCodeLine{22     \};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{30     \textcolor{keyword}{template} <\textcolor{keyword}{class} App>}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{namespace_frame_hunter_a0d5d8f411cc0d52433f492be5984ed39}{run\_application}}()}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         \textcolor{keyword}{static\_assert}(is\_base\_of<Application, App>::value, \textcolor{stringliteral}{"{}App must derive from Application"{}});}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35         \textcolor{keyword}{auto} app = \textcolor{keyword}{new} App();}
+\DoxyCodeLine{36         app-\/>Run();}
+\DoxyCodeLine{37         \textcolor{keyword}{delete} app;}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}

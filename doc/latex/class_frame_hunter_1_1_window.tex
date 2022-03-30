@@ -1,0 +1,118 @@
+\hypertarget{class_frame_hunter_1_1_window}{}\doxysection{Frame\+Hunter\+::Window Class Reference}
+\label{class_frame_hunter_1_1_window}\index{FrameHunter::Window@{FrameHunter::Window}}
+
+
+{\ttfamily \#include $<$Window.\+hpp$>$}
+
+Inheritance diagram for Frame\+Hunter\+::Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_frame_hunter_1_1_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_frame_hunter_1_1_window_a2a3ea7dca394eb3aca147c710abceafb}{$\sim$\+Window}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_frame_hunter_1_1_window_a127d6b189e1b7286cdce867b21243a7b}{Poll\+Event}} (\mbox{\hyperlink{class_event}{Event}} $\ast$event)=0
+\item 
+virtual unsigned int \mbox{\hyperlink{class_frame_hunter_1_1_window_aac5878ace49509e6c8ef41a02218058a}{Get\+Height}} () const =0
+\item 
+virtual unsigned int \mbox{\hyperlink{class_frame_hunter_1_1_window_a15bbf1b696951689df7cd8cebb338405}{Get\+Width}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_frame_hunter_1_1_window_ac39ca7d4c23910244263adbd0de41285}{Set\+VSynv}} (bool enabled)=0
+\item 
+virtual bool \mbox{\hyperlink{class_frame_hunter_1_1_window_acafc7a1eac0d6ec4eea02b35badb27c3}{is\+VSync}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_frame_hunter_1_1_window_a757352fe78c2a522cc2559e5011294bc}{draw}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_frame_hunter_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{class_frame_hunter_1_1_window_afde31bf158af15316d490e0cb529fde3}{Create}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_a2a3ea7dca394eb3aca147c710abceafb}\label{class_frame_hunter_1_1_window_a2a3ea7dca394eb3aca147c710abceafb}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily virtual Frame\+Hunter\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_afde31bf158af15316d490e0cb529fde3}\label{class_frame_hunter_1_1_window_afde31bf158af15316d490e0cb529fde3}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!Create@{Create}}
+\index{Create@{Create}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_frame_hunter_1_1_window}{Window}} $\ast$ Frame\+Hunter\+::\+Window\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_a757352fe78c2a522cc2559e5011294bc}\label{class_frame_hunter_1_1_window_a757352fe78c2a522cc2559e5011294bc}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!draw@{draw}}
+\index{draw@{draw}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Frame\+Hunter\+::\+Window\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a44e4287971877516be3f8fdd4b24b750}{Frame\+Hunter\+::\+SDLWindow}}.
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_aac5878ace49509e6c8ef41a02218058a}\label{class_frame_hunter_1_1_window_aac5878ace49509e6c8ef41a02218058a}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily virtual unsigned int Frame\+Hunter\+::\+Window\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a920040aa3365276aa40a86fd8f7cd8e8}{Frame\+Hunter\+::\+SDLWindow}}.
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_a15bbf1b696951689df7cd8cebb338405}\label{class_frame_hunter_1_1_window_a15bbf1b696951689df7cd8cebb338405}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily virtual unsigned int Frame\+Hunter\+::\+Window\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a7e4e4887328c3765167c271ba4c7c223}{Frame\+Hunter\+::\+SDLWindow}}.
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_acafc7a1eac0d6ec4eea02b35badb27c3}\label{class_frame_hunter_1_1_window_acafc7a1eac0d6ec4eea02b35badb27c3}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!isVSync@{isVSync}}
+\index{isVSync@{isVSync}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{isVSync()}{isVSync()}}
+{\footnotesize\ttfamily virtual bool Frame\+Hunter\+::\+Window\+::is\+VSync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a045e0f0707fbb88d87f58060cd6d8462}{Frame\+Hunter\+::\+SDLWindow}}.
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_a127d6b189e1b7286cdce867b21243a7b}\label{class_frame_hunter_1_1_window_a127d6b189e1b7286cdce867b21243a7b}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!PollEvent@{PollEvent}}
+\index{PollEvent@{PollEvent}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{PollEvent()}{PollEvent()}}
+{\footnotesize\ttfamily virtual bool Frame\+Hunter\+::\+Window\+::\+Poll\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event}{Event}} $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a4a3d2528c2be65da2777a6403acd1b03}{Frame\+Hunter\+::\+SDLWindow}}.
+
+\mbox{\Hypertarget{class_frame_hunter_1_1_window_ac39ca7d4c23910244263adbd0de41285}\label{class_frame_hunter_1_1_window_ac39ca7d4c23910244263adbd0de41285}} 
+\index{FrameHunter::Window@{FrameHunter::Window}!SetVSynv@{SetVSynv}}
+\index{SetVSynv@{SetVSynv}!FrameHunter::Window@{FrameHunter::Window}}
+\doxysubsubsection{\texorpdfstring{SetVSynv()}{SetVSynv()}}
+{\footnotesize\ttfamily virtual void Frame\+Hunter\+::\+Window\+::\+Set\+VSynv (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a6d77cd0a4d5ea14ffaf45c6ffa2cb75c}{Frame\+Hunter\+::\+SDLWindow}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/krott/\+Documents/\+Frame\+Hunter/\+Frame\+Hunter/src/\mbox{\hyperlink{_window_8hpp}{Window.\+hpp}}\item 
+C\+:/\+Users/krott/\+Documents/\+Frame\+Hunter/\+Frame\+Hunter/src/\mbox{\hyperlink{_s_d_l_window_8cpp}{SDLWindow.\+cpp}}\end{DoxyCompactItemize}

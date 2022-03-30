@@ -1,0 +1,48 @@
+\hypertarget{_s_d_l_window_8hpp_source}{}\doxysection{SDLWindow.\+hpp}
+\label{_s_d_l_window_8hpp_source}\index{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/SDLWindow.hpp@{C:/Users/krott/Documents/FrameHunter/FrameHunter/src/SDLWindow.hpp}}
+\mbox{\hyperlink{_s_d_l_window_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_window_8hpp}{Window.hpp}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pch_8hpp}{src/pch.hpp}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}SDL.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}SDL\_events.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_frame_hunter}{FrameHunter}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keyword}{class }\mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window}{SDLWindow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_frame_hunter_1_1_window}{Window}}}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a4a3d2528c2be65da2777a6403acd1b03}{PollEvent}}(\mbox{\hyperlink{class_event}{Event}}* event) \textcolor{keyword}{override};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19         \textcolor{keyword}{inline} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a920040aa3365276aa40a86fd8f7cd8e8}{GetHeight}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} width; \}}
+\DoxyCodeLine{20         \textcolor{keyword}{inline} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a7e4e4887328c3765167c271ba4c7c223}{GetWidth}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} height; \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a6d77cd0a4d5ea14ffaf45c6ffa2cb75c}{SetVSynv}}(\textcolor{keywordtype}{bool} enabled)\textcolor{keyword}{ override }\{ vsync\_enabled = enabled; \};}
+\DoxyCodeLine{23         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a045e0f0707fbb88d87f58060cd6d8462}{isVSync}}()\textcolor{keyword}{ const override }\{ \textcolor{keywordflow}{return} vsync\_enabled; \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a44e4287971877516be3f8fdd4b24b750}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a5ab657accb42403fd624ae5aea09926e}{Init}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_ae5797889cf8fc51268de598e0b624f30}{SDLWindow}}();}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_frame_hunter_1_1_s_d_l_window_a9b9c913100dbdc0408beaffc66dd7a9d}{\string~SDLWindow}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keyword}{private}:}
+\DoxyCodeLine{34         SDL\_Window* window;}
+\DoxyCodeLine{35         SDL\_Renderer* renderer;}
+\DoxyCodeLine{36         \textcolor{keyword}{const} \textcolor{keywordtype}{char}* title = \textcolor{stringliteral}{"{}FrameHunter"{}};}
+\DoxyCodeLine{37         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} width = 1080;}
+\DoxyCodeLine{38         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} height = 720;}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool} vsync\_enabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{40     \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}

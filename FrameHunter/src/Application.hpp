@@ -5,6 +5,8 @@
 #include "Window.hpp"
 #include "src/pch.hpp"
 
+
+
 namespace FrameHunter
 {
     class __declspec(dllexport) Application
@@ -18,6 +20,12 @@ namespace FrameHunter
         std::unique_ptr<Window> window;
         bool running = true;
     };
+
+    /**
+     * @brief Instantiates and runs a Generic Class that implements Application
+     * 
+     * @tparam App 
+     */
 
     template <class App>
     void run_application()

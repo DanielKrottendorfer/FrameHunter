@@ -24,7 +24,6 @@ namespace FrameHunter
 
         void draw() override;
 
-        void Init();
 
 
         SDLWindow();
@@ -37,6 +36,8 @@ namespace FrameHunter
         unsigned int width = 1080;
         unsigned int height = 720;
         bool vsync_enabled = false;
+        
+        void Init();
     };
 
 }
