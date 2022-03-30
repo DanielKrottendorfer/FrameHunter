@@ -1,7 +1,6 @@
-#include "SDLWindow.hpp"
-#include "FHLog.hpp"
 
-#include "pch.hpp"
+#include "FHLog.hpp"
+#include "SDLWindow.hpp"
 
 namespace FrameHunter
 {
@@ -19,7 +18,7 @@ namespace FrameHunter
         FH_CORE_INFO("SDL WINDOW INITIALIZED");
     }
 
-    void SDLWindow::swap()
+    void SDLWindow::draw()
     {
         SDL_SetRenderDrawColor(renderer, 96, 128, 255, 255);
         SDL_RenderClear(renderer);
@@ -30,8 +29,14 @@ namespace FrameHunter
 
     void SDLWindow::Init()
     {
-        if (SDL_INITIALIZED)
-            return;
+        if (!SDL_INITIALIZED){
+            if (SDL_Init(SDL_INIT_VIDEO) < 0)
+            {
+                FH_CORE_ERROR("Failed to initialize SDL");
+                FH_CORE_ERROR(SDL_GetError());
+                exit(1);
+            }
+        }
 
         int rendererFlags, windowFlags;
 
@@ -39,14 +44,8 @@ namespace FrameHunter
 
         windowFlags = 0;
 
-        if (SDL_Init(SDL_INIT_VIDEO) < 0)
-        {
-            FH_CORE_ERROR("Failed to initialize SDL");
-            FH_CORE_ERROR(SDL_GetError());
-            exit(1);
-        }
 
-        window = SDL_CreateWindow("Shooter 01", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, width, height, windowFlags);
+        window = SDL_CreateWindow(title, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, width, height, windowFlags);
 
         if (!window)
         {

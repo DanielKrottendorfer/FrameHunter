@@ -1,9 +1,9 @@
 #pragma once
 
-using namespace std;
-
 #include "FHLog.hpp"
 #include "Event.h"
+#include "Window.hpp"
+#include "src/pch.hpp"
 
 namespace FrameHunter
 {
@@ -14,13 +14,15 @@ namespace FrameHunter
         virtual ~Application();
 
         void Run();
+    private:
+        std::unique_ptr<Window> window;
+        bool running = true;
     };
 
     template <class App>
     void run_application()
     {
-
-        static_assert(std::is_base_of<Application, App>::value, "App must derive from Application");
+        static_assert(is_base_of<Application, App>::value, "App must derive from Application");
 
         auto app = new App();
         app->Run();

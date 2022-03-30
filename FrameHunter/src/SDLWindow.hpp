@@ -1,4 +1,5 @@
-#include "Window.h"
+#pragma once
+#include "Window.hpp"
 #include "SDL.h"
 
 using namespace std;
@@ -19,7 +20,7 @@ namespace FrameHunter
         void SetVSynv(bool enabled) override { vsync_enabled = enabled; };
         bool isVSync() const override { return vsync_enabled; };
 
-        void swap() override;
+        void draw() override;
 
         void Init();
 

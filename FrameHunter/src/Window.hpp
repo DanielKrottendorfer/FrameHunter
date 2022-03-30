@@ -1,4 +1,4 @@
-
+#pragma once
 
 namespace FrameHunter
 {
@@ -16,7 +16,7 @@ namespace FrameHunter
         virtual void SetEventCallback() = 0;
         virtual void SetVSynv(bool enabled) = 0;
         virtual bool isVSync() const = 0;
-        virtual void swap() = 0;
+        virtual void draw() = 0;
 
         static Window *Create();
     };
